@@ -7,7 +7,7 @@ const Menu = ({ fastFoods, isDarkMode, addToOrder }) => {
       {fastFoods.map((food) => (
         <div key={food.id} className="col-md-4 mb-4">
           <div className="card">
-            <img src={food.image} className="card-img-top" alt={food.name} />
+            <img src={food.image} style={{ height: "250px "}} className="card-img-top" alt={food.name} />
             <div className="card-body">
               <h5 className="card-title">{food.name}</h5>
               <p className="card-text">{food.description}</p>
